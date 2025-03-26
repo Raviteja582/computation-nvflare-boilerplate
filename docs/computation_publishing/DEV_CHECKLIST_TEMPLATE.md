@@ -13,7 +13,16 @@ Provide a clear and comprehensive document covering the following:
    - [ ] Structure of the **data directory**.  
    - [ ] Specification for **`parameters.json`**.  
 - [ ] **Output Format Description** – Clear definition of expected outputs.  
-- [ ] **Minimum Hardware & Space Requirements** – System requirements for execution.  
+- [ ] **Minimum Hardware & Space Requirements** – System requirements for execution.
+      Craete a log of how many subjects are in each site along with peak RAM usage.
+      To track RAM usage, go to docker dashboard, to the specific container and under the 'stats' tab you see RAM usage.
+      This info. needs to be included in the compoutation description. Example below:
+      Number of Subjects	RAM Needed (GB)
+            1,824         	26.62544646
+            327         	6.895502383
+            188         	4.462923564
+            1,722         	25.44798692
+            2,074         	29.45391698
 - [ ] **Basic Dataset Validator** – A tool or script to validate input data format.  
 
 ## **GitHub Repository**  
