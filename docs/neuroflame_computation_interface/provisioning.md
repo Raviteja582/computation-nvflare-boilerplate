@@ -1,10 +1,10 @@
 ### Overview
 
-This document outlines the process COINSTAC uses to provision federated networks for their respective studies. It details the inputs required during the provisioning step and specifies the expected outputs.
+This document outlines the process NeuroFLAME uses to provision federated networks for their respective studies. It details the inputs required during the provisioning step and specifies the expected outputs.
 
 ### Provisioning
 
-The provisioning step creates "runKits," which are folders that each site will use to launch, configure, and connect to the federated network associated with a study run. Once the computation container completes the provisioning step, these runKits will be distributed by COINSTAC to the respective sites and the central node. Each runKit will be mounted to the computation containers for both the site and the central node involved in the run.
+The provisioning step creates "runKits," which are folders that each site will use to launch, configure, and connect to the federated network associated with a study run. Once the computation container completes the provisioning step, these runKits will be distributed by NeuroFLAME to the respective sites and the central node. Each runKit will be mounted to the computation containers for both the site and the central node involved in the run.
 
 ### Input
 

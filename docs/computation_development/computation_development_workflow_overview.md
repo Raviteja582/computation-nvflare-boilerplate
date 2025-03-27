@@ -1,6 +1,6 @@
-### **Guide to Developing Computations for COINSTAC**
+### **Guide to Developing Computations for NeuroFLAME**
 
-**Goal**: Create a well-designed computation that integrates seamlessly with the COINSTAC platform, works reliably, and produces meaningful results.
+**Goal**: Create a well-designed computation that integrates seamlessly with the NeuroFLAME platform, works reliably, and produces meaningful results.
 
 ---
 
@@ -36,9 +36,9 @@
 
 ---
 
-#### **Step 3: Prepare Deliverables for COINSTAC Integration**
+#### **Step 3: Prepare Deliverables for NeuroFLAME Integration**
 
-Before integration with COINSTAC, provide two key deliverables:
+Before integration with NeuroFLAME, provide two key deliverables:
 
 1. **Description of the Federated Workflow**
 
@@ -131,14 +131,14 @@ Before integration with COINSTAC, provide two key deliverables:
   - Include any assumptions or prerequisites in your workflow description.
 
 - **Collaboration**:
-  - Share your deliverables with the COINSTAC development team.
+  - Share your deliverables with the NeuroFLAME development team.
   - Be open to feedback and ready to refine your computations as needed.
 
 ---
 
 ### **Summary**
 
-By following these steps and preparing the specified deliverables, you set a solid foundation for integrating your computation with COINSTAC:
+By following these steps and preparing the specified deliverables, you set a solid foundation for integrating your computation with NeuroFLAME:
 
 1. **Working Prototype**: Validate your analysis on pooled data to ensure correctness.
 2. **Conceptual Federated Workflow**: Plan how your analysis will function in a federated environment.
