@@ -22,7 +22,7 @@ To quickly get up and running with the boilerplate application, refer to the
 
 ## Documentation
 
-- **[Computation Interface Documentation](docs/coinstac_computation_interface/COINSTAC_Computation_Interface.md)**: How computations interact with COINSTAC.
+- **[Computation Interface Documentation](docs/neuroflame_computation_interface/neuroflame_computation_interface.md)**: How computations interact with COINSTAC.
 - **[Developer Guides](docs/computation_development/computation_development.md)**: Tips for seamless computation development.
 - **[Publishing Requirements](docs/computation_publishing/Computation_Publishing_Requirements.md)**: Requirements and instructions for publishing.
 
