@@ -1,3 +1,7 @@
+Below is the final version of the Basic Computation Development Document with improved flow, a concise introduction, immediate access to quick links, and clear guidance for developers:
+
+---
+
 # Basic Computation Development Document
 
 **Quick Links:**
@@ -10,7 +14,9 @@
 
 ---
 
-This document provides essential guidance for developing an NVFLARE app that functions as a Neuroflame computation module. It explains where to place your code and configuration files, details key programming concepts and control flow, and specifies the required methods. Use this document as your “cheat sheet” to build computation modules that run identically on the NVFLARE simulator and on the Neuroflame production platform.
+**Overview:**  
+This document provides essential guidance for developing an NVFLARE app that functions as a Neuroflame computation module. It covers where to place your code and configuration files, key programming concepts and control flow, and the methods you must implement. For a broader perspective on converting an algorithm into a federated computation module, see:  
+[Algorithm to Computation Module](./algorithm_to_computation_module_process.md).
 
 ---
 
@@ -46,7 +52,7 @@ Focus on these directories when developing your computation:
   - `get_output_directory_path()`
   - `get_parameters_file_path()`
 
-  These functions ensure that your app behaves consistently across environments.
+  These functions ensure your app behaves consistently across environments.
 
 ---
 
