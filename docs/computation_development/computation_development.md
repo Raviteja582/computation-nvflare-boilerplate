@@ -1,5 +1,15 @@
 # Basic Computation Development Document
 
+**Quick Links:**
+
+- **[Hello World Tutorial](./tutorial_hello_world.md)** – Recommended first step.
+- **[NVFLARE Programming Guide](https://nvflare.readthedocs.io/en/2.4.0/programming_guide.html)**
+- **[Core Components and Workflow](./core_components_and_workflow.md)**
+- **[Neuroflame Computation Interface Documentation](../neuroflame_computation_interface/neuroflame_computation_interface.md)**
+- **[Development Environments](./development_environments.md)**
+
+---
+
 This document provides essential guidance for developing an NVFLARE app that functions as a Neuroflame computation module. It explains where to place your code and configuration files, details key programming concepts and control flow, and specifies the required methods. Use this document as your “cheat sheet” to build computation modules that run identically on the NVFLARE simulator and on the Neuroflame production platform.
 
 ---
@@ -15,7 +25,8 @@ Focus on these directories when developing your computation:
   Stores configuration files for both server and client components.
 
 - **`./test_data/<sites>/`**  
-  Holds test data for different sites. Ensure the folder names (e.g., `site1`, `site2`, `site3`) match those used with NVFLARE commands.
+  Holds test data for different sites. Ensure the folder names (e.g., `site1`, `site2`, `site3`) match those used with the NVFLARE command:  
+  `nvflare simulator -c site1,site2,site3 ./app`
 
 - **`./test_data/server/parameters.json`**  
   Contains the configuration parameters to be loaded into the federated learning (FL) context. This file appears in raw form on the Neuroflame desktop app, enabling the consortium leader to configure a study.
@@ -36,11 +47,6 @@ Focus on these directories when developing your computation:
   - `get_parameters_file_path()`
 
   These functions ensure that your app behaves consistently across environments.
-
-### Further Reading
-
-- [NVFLARE Programming Guide](https://nvflare.readthedocs.io/en/2.4.0/programming_guide.html)
-- [Core Components and Workflow](./core_components_and_workflow.md)
 
 ---
 
@@ -91,23 +97,11 @@ A typical computation might proceed as follows:
 ## 5. Test Data
 
 - **Site Data:**  
-  Place test data for each site under **`./test_data/<site_name>/`**. The site folder names (e.g., `site1`, `site2`) must match those used with the NVFLARE command.
+  Place test data for each site under **`./test_data/<site_name>/`**. The site folder names (e.g., `site1`, `site2`) must match those used with the NVFLARE simulator command:  
+  `nvflare simulator -c site1,site2 ./app`
 
 - **Configuration Data:**  
   Store the test version of **`parameters.json`** in **`./test_data/server/parameters.json`**. This file simulates the configuration that the controller loads into the FL context.
-
----
-
-## 6. References
-
-- **Quick Tutorial:**  
-  Start with the [Hello World](./tutorial_hello_world.md) tutorial.
-
-- **Setup Assistance:**  
-  For development environment setup, see [Development Environments](./development_environments.md).
-
-- **Neuroflame Computation Interface:**  
-  For additional details on the Neuroflame computation interface, see the [Neuroflame Computation Interface Documentation](../neuroflame_computation_interface/neuroflame_computation_interface.md).
 
 ---
 
