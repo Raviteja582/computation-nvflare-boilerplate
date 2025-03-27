@@ -6,9 +6,6 @@ As a computation developer, focus on the following directories:
 - **`./app/config/`**: Contains configuration files for both server and client components.
 - **`./test_data/<sites>/`**: Stores test data for different sites.
 - **`./test_data/server/parameters.json`**: Parameters to be loaded into the FL context.
-- **`./jobs/job/`**: Job artifacts. This folder is populated by running `./appToJob.sh`.
-
-Run `./appToJob.sh` after making changes in `app/config/` to ensure updates are copied.
 
 ---
 
