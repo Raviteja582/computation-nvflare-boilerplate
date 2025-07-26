@@ -44,8 +44,9 @@ export NVFLARE_POC_WORKSPACE=[path to this dir + ./poc-workspace/]
 
 The simulator can run the entire project as a single thread. This can be useful for attaching a debugger.
 
-The following command allow you to run the app using the Simulator
+The following commands allow you to run the app using the Simulator
 
 ```
-nvflare simulator -c site1,site2 ./app
+python makeJob.py site1,site2
+nvflare simulator ./job
 ```

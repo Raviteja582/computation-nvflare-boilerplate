@@ -31,8 +31,9 @@ Focus on these directories when developing your computation:
   Stores configuration files for both server and client components.
 
 - **`./test_data/<sites>/`**  
-  Holds test data for different sites. Ensure the folder names (e.g., `site1`, `site2`, `site3`) match those used with the NVFLARE command:  
-  `nvflare simulator -c site1,site2,site3 ./app`
+  Holds test data for different sites. Ensure the folder names (e.g., `site1`, `site2`, `site3`) match those used with the NVFLARE job definition created from `makeJob.py`:  
+  python makeJob.py site1,site2,site3
+  nvflare simulator ./job
 
 - **`./test_data/server/parameters.json`**  
   Contains the configuration parameters to be loaded into the federated learning (FL) context. This file appears in raw form on the Neuroflame desktop app, enabling the consortium leader to configure a study.
@@ -103,8 +104,9 @@ A typical computation might proceed as follows:
 ## 5. Test Data
 
 - **Site Data:**  
-  Place test data for each site under **`./test_data/<site_name>/`**. The site folder names (e.g., `site1`, `site2`) must match those used with the NVFLARE simulator command:  
-  `nvflare simulator -c site1,site2 ./app`
+  Place test data for each site under **`./test_data/<site_name>/`**. The site folder names (e.g., `site1`, `site2`) must match those used with the NVFLARE job definition used by nvflare simulator:  
+  python makeJob.py site1,site2
+  nvflare simulator ./job
 
 - **Configuration Data:**  
   Store the test version of **`parameters.json`** in **`./test_data/server/parameters.json`**. This file simulates the configuration that the controller loads into the FL context.

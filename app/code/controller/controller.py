@@ -44,6 +44,9 @@ class MyController(Controller):
 
         :param fl_ctx: Federated learning context for this run.
         """
+        print("\n\n\n")
+        print("min_clients:", self._min_clients)
+        print("\n\n\n")
         # Assign the aggregator to the controller
         self.aggregator = self._engine.get_component(AGGREGATOR_ID)
         # Load and set computation parameters for the sites

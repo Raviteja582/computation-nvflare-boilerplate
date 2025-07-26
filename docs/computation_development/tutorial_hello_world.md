@@ -23,9 +23,15 @@ docker run --rm -it ^
     nvflare-pt:latest
 ```
 
+
+# Prepare the job folder
+```
+python makeJob.py site1,site2
+```
+
 # Run the simulator
 ```
-nvflare simulator -c site1,site2 ./app
+nvflare simulator ./job
 ```
 
 # View the results
