@@ -1,3 +1,19 @@
+"""
+makeJob.py
+
+High-level script for computation authors to create a job folder for NVFlare simulation.
+This script assumes a specific directory structure and injects min_clients into the workflow config.
+Not intended as a general-purpose NVFlare job creation utility.
+
+Usage (from project root):
+    python makeJob.py site1,site2,site3
+
+This will:
+    - Remove and recreate the 'job' folder
+    - Copy server/client configs
+    - Set min_clients in the first workflow to the number of sites
+    - Generate meta.json for the job
+"""
 import argparse
 import os
 import shutil
